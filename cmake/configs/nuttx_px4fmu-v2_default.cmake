@@ -140,7 +140,8 @@ set(config_module_list
 	# Libraries
 	#
 	lib/controllib
-	lib/mathlib
+
+lib/mathlib
 	lib/mathlib/math/filter
 	lib/ecl
 	lib/external_lgpl
@@ -150,7 +151,7 @@ set(config_module_list
 	lib/launchdetection
 	lib/led
 	lib/terrain_estimation
-	lib/runway_takeoff
+examples/px4_simple_app	lib/runway_takeoff
 	lib/tailsitter_recovery
 	lib/version
 	lib/DriverFramework/framework
@@ -158,7 +159,8 @@ set(config_module_list
 	lib/micro-CDR
 
 	# had to add for cmake, not sure why wasn't in original config
-	platforms/common
+
+platforms/common
 	platforms/nuttx/px4_layer
 
 	#
@@ -217,3 +219,4 @@ set_target_properties(serdis PROPERTIES
 	MAIN "serdis"
 	STACK_MAIN "2048"
 	COMPILE_FLAGS "-Os")
+examples/px4_simple_app
